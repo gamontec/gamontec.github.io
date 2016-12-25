@@ -16,8 +16,8 @@ function setup() {
 }
 
 function draw() {
-  punto.x=random(0,width);
-  punto.y=random(0,height);
+  punto.x=random(0,mouseX+50);
+  punto.y=random(0,mouseY+50);
   col.r=random(0,255);
   col.g=random(0,255);
   col.b=random(0,255);
