@@ -24,19 +24,17 @@ p, h2, h3, h4, h5, h6 {
 }
 
 ul {
-    display: inline-flex;
-    list-style-type: none;
-    padding: 0;
+    
 }
 
 li{
-  margin-right: 23px;
+  font-family: "Aller", sans-serif;
+  color: rgb(100,100,100);
 }
 
 li a{
-  font-family: Helvetica, sans-serif;
-  text-decoration: none;
-  color: black;
+  font-family: "Aller", sans-serif;
+  color: rgb(100,100,100);
 }
 
 li a:hover{
