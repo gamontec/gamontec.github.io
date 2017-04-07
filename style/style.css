@@ -4,16 +4,18 @@
 /*with tons of help by wipawe sirikolkarn*/
 /*march 2017*/
 
-/*
+
 img {
     display: block;
     margin: auto;
-    width: 75%;
-}*/
+
+    max-height: 600px;
+    /*width: 75%;*/
+}
 
 h1 {
   font-family: "Aller",sans-serif;
-  font-size: 30px;
+  font-size: 37px;
   color: rgb(150,150,150);
 }
 
@@ -53,14 +55,13 @@ a:hover{
   opacity: 0.5;
 }
 
-/*
+
 .piccaption {
-  font-family: Helvetica, sans-serif;
+  font-family: "Aller", sans-serif;
   font-weight: normal;
   text-align: center;
-  font-size: 40%;
-}*/
-
+  font-size: 85%;
+}
 .linktohome {
   text-decoration: none;
   color: rgb(100,100,100);
@@ -74,9 +75,26 @@ a:hover{
   text-align: center;
 }
 
-/*
+.abajo{
+  position: absolute;
+  bottom: 30px;
+  font-size: 18px;
+  font-family: "Aller",sans-serif;
+  font-weight: normal;
+  color: rgb(100,100,100);
+}
+
+.encabezado{
+  margin-top: 35px;
+  font-size: 32px;
+  font-family: "Aller",sans-serif;
+  font-weight: normal;
+  color: rgb(100,100,100);
+}
+
+
 .coverpiccontent {
     border-radius: 20px;
     max-width: 60%;
     height: auto;
-}*/
+}
