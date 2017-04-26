@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>planificación taller p5.js</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+					  <h2> Taller de introducción a la programación creativa para jóvenes</h2>
+						<p>
+							<small> por <a href="https://github.com/gamontec">Guillermo Montecinos</a> y <a href="https://www.facebook.com/codedEscuela/">Coded - Escuela creativa </a><small>
+						</p>
+					</script>
+				</section>
+				<section>
+					<h3 style="text-align:left;">Sobre el instructor</h3>
+					<p style="text-align:left;">
+						- ingeniero eléctrico, MSc<br>
+						- músico<br>
+						- educador/programador
+					</p>
+				</section>
+				<section>
+					<h3 style="text-align:left;">Sobre la organización</h3>
+					<p style="text-align:left;">
+						<small align="justify">
+						<a href="https://www.facebook.com/codedEscuela/">Coded - Escuela creativa</a>, es una escuela y espacio de encuentro democrático, inclusivo, feminista, vegano, de código abierto y de crecimiento personal, fundada en el año 2017 por <a href="https://github.com/montoyamoraga">Aarón Montoya-Moraga</a>, <a href="https://github.com/nataliacabrera">Natalia Cabrera</a>, <a href="https://github.com/camilacolussi">Camila Colussi</a>, <a href="https://github.com/coyarzun">Christian Oyarzún</a> y <a href="https://github.com/gamontec">Guillermo Montecinos</a> y uno de sus principales objetivos es romper las barreras de entrada a la programación y entregar herramientas que favorezcan el desarrollo intelectual, cultural, artístico y social.<br><br>
+						Coded - Escuela de artes mediales nace de la necesidad de abordar la tecnología como un romanticismo político y no solo funcional a las necesidades del mercado laboral. La tecnología es un bien humano básico y saber programación es la nueva alfabetización.
+					</small>
+					</p>
+				</section>
+				<section>
+					<h3>Objetivos</h3>
+					<p align="left">
+						<small align="justity">
+							El objetivo general del taller es lograr que a través de un proceso experiencial los participantes adquieran los fundamentos de programación.
+						</small>
+					</p>
+					<p align="left">
+						<!-- <small align="justify">
+							Los objetivos específicos del taller son que los participantes: <b>a)</b> aprendan elementos básicos del lenguaje JavaScript, <b>b)</b> aprendan a programar utilizando la biblioteca <a href="http://p5js.org/">p5.js</a> de la fundación <a href="https://processingfoundation.org/">Processing</a> y <b>c)</b> que desarrollen su creatividad a través de la creación de aplicaciones multimedia/interactivas con p5.js.
+						</small> -->
+						<small align="justify">
+							Los objetivos específicos del taller son que los participantes:
+							<ul>
+								<li>aprendan elementos básicos del lenguaje JavaScript</li>
+								<li>aprendan a programar utilizando la biblioteca <a href="http://p5js.org/">p5.js</a> de la fundación <a href="https://processingfoundation.org/">Processing</a></li>
+								<li>desarrollen su creatividad a través de la creación de aplicaciones multimedia e interactivas con p5.js</li>
+							</ul>
+						</small>
+					</p>
+				</section>
+				<section>
+					<h3>Descripción del taller</h3>
+					<p align="left">
+						<small align="justify">
+							El taller consiste en 6 sesiones semanales de 2 horas cada una y tendrá un máximo de 8 participantes. Cada uno deberá asistir con un computador, propio o provisto por la entidad patrocinadora del taller, Windows, Mac o Linux. Todos son bienvenidos.
+						</small>
+					</p>
+					<p align="left">
+						<small align="justify">
+							Durante las 6 sesiones se discutirán tópicos elementales de programación, los que irán incrementando su complejidad lógica y funcional. La estructura de las sesiones será la siguiente: primero el coordinador presentará el o los tópicos a discutir en la sesión, mediante una explicación y una motivación basada en ejemplos desarrollados por otros usuarios. Luego, mediante un ejemplo simple el coordinador explicará los conceptos de manera interactiva. Finalmente, se guiará a los participantes para que éstos exploren modificaciones o creaciones a partir del ejemplo propuesto.
+						</small>
+					</p>
+					<p align="left">
+						<small align="justify">
+							Al finalizar el taller se realizará una pequeña exposición en la que se mostrarán los mejores trabajos de cada participante.
+						</small>
+					</p>
+				</section>
+				<section>
+					<p>
+					<h2>Sesión 1</h2>
+					</p>
+					<p align=left>
+					- Introducción al taller</br>
+					- Motivaciones</br>
+					- JavaScript básico 1 y 2</br>
+				  - p5.js básico 1 y 2</br>
+					</p>
+				</section>
+				<section>
+					<p>
+						<h6 style="text-align:left;">Sesión 1</h6>
+					</p>
+					<p>
+						<ul style="float:left;">
+						- editar código<br>
+					  - JavaScript básico 1: sintaxis
+					    <ul>
+								- punto y coma<br>
+					    	- paréntesis (), llaves {}, corchete []
+							</ul>
+					  - JavaScript básico 2: lógica detrás del código
+							<ul>
+							- secuencia de ejecución de comandos<br>
+					    - bloques de código<br>
+					    - funciones 1, reusabilidad, parametrización
+							</ul>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<p>
+						<h6 style="text-align:left;">Sesión 1</h6>
+					</p>
+					<p>
+						<ul style="float:left;">
+						- p5.js básico 1: formas elementales
+							<ul>
+							- elipse<br>
+							- línea
+							</ul>
+						- p5.js básico 2: funciones 1
+							<ul>
+								- <code>createCanvas()</code>:<br>
+								- qué es un lienzo<br>
+								- sistema de coordenadas
+							</ul>
+							- <code>setup()</code><br>
+							- <code>draw()</code>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<p>
+						<h2>Sesión 2 </h2>
+					</p>
+					<p align=left>
+						- JavaScript básico 3 y 4<br>
+						- p5.js básico 3 y 4
+					</p>
+				</section>
+				<section>
+					<p>
+						<h6 style="text-align:left;">Sesión 2</h6>
+					</p>
+					<p>
+						<ul style="float:left;">
+							- JavaScript básico 3: variables
+							<ul>
+								- declarar variables<br>
+								- qué son las variables?<br>
+								- nombres de una variable<br>
+							</ul>
+							- JavaScript básico 4: aritmética básica
+							<ul>
+								- orden de procedencia<br>
+								- operadores
+							</ul>
+						</ul>
+					</p>
+				</section>
+				<section>
+				<p>
+					<h6 style="text-align:left;">Sesión 2</h6>
+				</p>
+				<p>
+					<ul style="float:left;">
+						- p5.js básico 3: Color RGB
+						<ul>
+							- <code>background(), fill(), stroke()</code>
+						</ul>
+						- p5.js básico 4: variables
+						<ul>
+							- variables de p5.js: mouseX, mouseY, height, width<br>
+							- figuras en movimiento
+						</ul>
+					</ul>
+				</p>
+				</section>
+				<section>
+					<p>
+						<h2>Sesión 3 </h2>
+					</p>
+					<p align=left>
+						- JavaScript básico 5
+					</p>
+				</section>
+				<section>
+					<p>
+						<h6 style="text-align:left;">Sesión 3</h6>
+					</p>
+					<p>
+						<ul style="float:left;">
+						- JavaScript básico 5: bucles for
+						<ul>
+							- para qué siver un bucle?<br>
+							- qué es un bucle for?<br>
+							- cómo declarar un bucle for?
+						</ul>
+						- p5.js básico 5.1: bucles
+						<ul>
+							- declarar un bucle for en p5.js
+						</ul>
+						- p5.js básico 5.2: aplicaciones de bucles
+						</ul>
+					</p>
+				</section>
+				<section>
+					<p>
+						<h2>Sesión 4</h2>
+					</p>
+					<p align=left>
+							- JavaScript básico 6<br>
+							- JavaScript básico 7<br>
+							- p5.js básico 6<br>
+							- p5.js básico 7
+					</p>
+				</section>
+				<section>
+					<p>
+						<h6 align=left>Sesión 4</h6>
+					</p>
+					<p>
+						<ul style="float:left;">
+						- JavaScript básico 6: funciones 2
+							<ul>
+							- estructura de una función<br>
+							- funciones que retornan datos<br>
+							- funciones que no retornan datos<br>
+							- declaración de funciones
+							</ul>
+						</ul>
+					</p>
+					</section>
+					<section>
+						<p>
+							<h6 align=left>Sesión 4</h6>
+						</p>
+						<p>
+							<ul style="float:left;">
+							- JavaScript básico 7: objetos 1, orientado a usar<br> bibliotecas de medios
+								<ul>
+									- qué son los objetos<br>
+									- sintaxis: cómo se llama un atributo o <br>función de un objeto
+								</ul>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<p>
+							<h6 align=left>Sesión 4</h6>
+						</p>
+						<p>
+							<ul>
+							- p5.js básico 6: medios
+								<ul>
+									- cargar imágenes<br>
+									- responsividad en parámetros de una imagen<br>
+									- asincronicidad<br>
+									- texto y tipografías
+								</ul>
+							- p5.js básico 7 (bonus): captura de video
+								<ul>
+									- <code>createCapture()</code>
+								</ul>
+							</ul>
+						</p>
+				</section>
+				<section>
+					<p>
+						<h2>Sesión 5</h2>
+					</p>
+					<p align=left>
+						- JavaScript básico 8<br>
+						- p5.js básico 8
+					</p>
+				</section>
+				<section>
+					<p>
+						<h6 align=left>Sesión 5</h6>
+					</p>
+					<p>
+						<ul>
+						- JavaScript básico 8: objetos 2
+							<ul>
+					      - declaración de un objeto: función constructor<br>
+					      - new<br>
+					      - this
+							</ul>
+					  - p5.js básico 8: aplicaciones visuales responsivas
+							<ul>
+					    - espejo de brillo <br>
+					    - video tracking
+							</ul>
+								<ul>
+					      - biblioteca de video tracking 'clmtrackr.js'
+								</ul>
+						</ul>
+					</p>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					  <h2> Taller de introducción a la programación creativa para jóvenes</h2>
+						<p>
+							<small> por <a href="https://github.com/gamontec">Guillermo Montecinos</a> y <a href="https://www.facebook.com/codedEscuela/">Coded - Escuela creativa </a><small>
+						</p>
+					</script>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
