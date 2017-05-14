@@ -17,12 +17,12 @@ var puntito=[];
 
 
 function windowResized(){
-  resizeCanvas(windowWidth,windowHeight);
+  resizeCanvas(windowWidth,2*windowHeight);
 }
 
 function setup(){
   //Formato de canvas
-  canvas=createCanvas(windowWidth,windowHeight);
+  canvas=createCanvas(windowWidth,2*windowHeight);
   canvas.position(0,0);
   canvas.style('z-index','-1');
 
