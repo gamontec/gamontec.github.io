@@ -48,7 +48,7 @@ li a:hover{
 a{
   font-family: "Aller", sans-serif;
   text-decoration: none;
-  color: rgb(100,100,100);
+  color: rgb(200,200,200);
 }
 
 a:hover{
@@ -81,7 +81,7 @@ a:hover{
   font-size: 18px;
   font-family: "Aller",sans-serif;
   font-weight: normal;
-  color: rgb(100,100,100);
+  color: rgb(200,200,200);
 }
 
 .encabezado{
