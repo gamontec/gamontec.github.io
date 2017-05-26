@@ -25,7 +25,7 @@ function setup(){
     x0=random(-width/2, 1.5*width);
     y0=random(-width/2-height/2, 1.5*width);
 
-    while(dist(x0,y0,width/2,height/2)>width/6) //tiene que ser width
+    while(dist(x0,y0,width/2,height/2)>width) //tiene que ser width
     {
       x0=random(-width/2, 1.5*width);
       y0=random(-width/2, 1.5*width);
