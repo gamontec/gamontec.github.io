@@ -25,7 +25,7 @@ function setup(){
     x0=random(-width/2, 1.5*width);
     y0=random(-width/2-height/2, 1.5*width);
 
-    while(dist(x0,y0,width/2,height/2)>width) //tiene que ser width
+    while(dist(x0,y0,width/2,height/2)>width/6) //tiene que ser width
     {
       x0=random(-width/2, 1.5*width);
       y0=random(-width/2, 1.5*width);
@@ -44,10 +44,10 @@ function draw(){
     distTest += dist(particle[i].x,particle[i].y,width/2,height/2);
     particle[i].update();
   }
-  if (distTest < 1){
+  if (distTest < 1 && release==false){
     allIn=true;
   }
-  //print(allIn);
+  print(allIn);
   //fill(30);
   //noStroke();
   //ellipse(width/2, height/2, maxDiam+1, maxDiam+1);
@@ -133,5 +133,6 @@ function mousePressed(){
     for (var i = 0; i < numPart; i++) {
       particle[i].smallBang();
     }
+    allIn=false;
   }
 }
