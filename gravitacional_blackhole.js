@@ -5,10 +5,13 @@ var x0;
 var y0;
 var numPart = 3000;
 
+function windowResized(){
+  resizeCanvas(windowWidth,windowHeight);
+}
+
 function setup(){
-  canvas=createCanvas(1200,600);
+  canvas=createCanvas(windowWidth,windowHeight);
   canvas.position(0,0);
-  canvas.size(windowWidth,windowHeight);
   canvas.style('z-index','-1');
 
   for (var i = 0; i < numPart; i++) {
