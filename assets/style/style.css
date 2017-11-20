@@ -73,6 +73,11 @@ a:hover, a h1:hover, a h2:hover {
 }
 
 #myStatement {
+  width: 100%;
+  overflow: auto;
+}
+
+.statement {
   
 }
 
