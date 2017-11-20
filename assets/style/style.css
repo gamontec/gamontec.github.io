@@ -38,15 +38,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  /*set font to Courier*/
-  font-family: Courier;
-  /*justify text*/
-  text-align: justify;
-  /*set margins*/
-  margin-top: 10%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 10%;
+  margin-bottom: 1.5em;
 }
 
 a {
@@ -86,7 +78,15 @@ a:hover, a h1:hover, a h2:hover {
 }
 
 .statement {
+  /*set font to Courier*/
+  font-family: Courier;
+  /*justify text*/
   text-align: justify;
+  /*set margins*/
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10%;
 }
 
 .project {
