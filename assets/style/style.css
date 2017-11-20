@@ -72,6 +72,10 @@ a:hover, a h1:hover, a h2:hover {
     transition: all 0.5s ease;
 }
 
+#myStatement {
+  
+}
+
 .project {
   width: 33.33%;
   float: left;
