@@ -73,11 +73,6 @@ a:hover, a h1:hover, a h2:hover {
 }
 
 #myStatement {
-  width: 100%;
-  overflow: auto;
-}
-
-.statement {
   /*set font to Courier*/
   font-family: Courier;
   /*justify text*/
@@ -87,6 +82,10 @@ a:hover, a h1:hover, a h2:hover {
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 10%;
+}
+
+.statement {
+
 }
 
 .project {
