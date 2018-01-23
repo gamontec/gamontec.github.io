@@ -20,7 +20,7 @@ function preload(){
 }
 
 function setup(){
-  createCanvas(1000,1000);
+  createCanvas(windowWidth,windowHeight);
   textFont("Courier");
 }
 
