@@ -40,7 +40,7 @@ function draw(){
   deltaMonth = deltaWeeks/4;
 
   background(255);
-  textSize(32);
+  textSize(40);
   text("La Sofi y el Guille se volverán a ver en ~",0,50);
   textSize(64);
 
