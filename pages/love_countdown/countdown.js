@@ -10,9 +10,14 @@ var deltaWeeks = 0;
 var deltaDays = 0;
 var deltaHours = 0;
 var deltaWeeks = 0;
+var heart;
 
 dateTill = Date.parse("April 13, 2018");
 //p5.js sketch
+
+function preload(){
+  heart = loadImage("heart.png");
+}
 
 function setup(){
   createCanvas(1000,1000);
@@ -36,7 +41,7 @@ function draw(){
 
   background(255);
   textSize(32);
-  text("Nos volveremos a ver en ~",0,50);
+  text("La Sofi y el Guille se volverán a ver en ~",0,50);
   textSize(64);
 
   text(deltaHours,0,150);
@@ -47,4 +52,7 @@ function draw(){
   text(" semanas.", 200, 250);
   text(deltaMonth,0,300);
   text(" meses.", 200, 300);
+  // textSize(96);
+  // text("<3",200,400);
+  image(heart, width/2, 400);
 }
