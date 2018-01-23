@@ -41,7 +41,7 @@ function draw(){
 
   background(255);
   textSize(40);
-  text("La Sofi y el Guille se volverán a ver en ~",0,50);
+  text("La Sofi y el Guille se volver"+String.fromCharCode(225)+"n a ver en ~",0,50);
   textSize(64);
 
   text(deltaHours,0,150);
