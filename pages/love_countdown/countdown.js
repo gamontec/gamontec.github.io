@@ -12,7 +12,7 @@ var deltaHours = 0;
 var deltaWeeks = 0;
 var heart;
 
-dateTill = Date.parse("February 23, 2018");
+dateTill = Date.parse("April 13, 2018");
 //p5.js sketch
 
 function preload(){
