@@ -13,8 +13,12 @@
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	max-width: 100%;
+	/* max-width: 100%; */
+	width:33.3%;
 	height: auto;
+	float: left;
+  padding: 30px;
+  display: block;
 }
 .hvrbox img {
 	max-width: 100%;
@@ -40,7 +44,7 @@
 	height: 100%;
 	background: rgba(0, 0, 0, 0.6);
 	color: #fff;
-	padding: 15px;
+	padding: 30px;
 	-moz-transition: all 0.4s ease-in-out 0s;
 	-webkit-transition: all 0.4s ease-in-out 0s;
 	-ms-transition: all 0.4s ease-in-out 0s;
