@@ -13,7 +13,8 @@ html, body, div {
   padding: 0;
   outline: 0;
   border: 0;
-  background-color: rgb(240,240,240);
+  /* background-color: rgb(240,240,240); */
+  background-color: #b0f2e1;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -64,9 +65,18 @@ a:hover, a h1:hover, a h2:hover {
     overflow: auto;
 }
 
-#myNavMenu a {
+#myNavMenuIndex a {
     float: left;
     width: 25%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: all 0.5s ease;
+}
+
+#myNavMenu a {
+    float: left;
+    width: 20%;
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -77,16 +87,22 @@ a:hover, a h1:hover, a h2:hover {
   /*set font to Courier*/
   font-family: Courier;
   /*justify text*/
-  text-align: justify;
+  text-align: left;
   /*set margins*/
-  margin-top: 2%;
+  margin-top: 4%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 10%;
+  margin-bottom: 0%;
+  padding-bottom: 1%;
 }
 
 #myContact {
   margin-top: 1%;
+}
+
+#myHeader {
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .project {
