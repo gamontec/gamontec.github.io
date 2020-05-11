@@ -3,12 +3,39 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-        <style>
-            #map{ height: 100%;}
-        </style>
+        <link rel="stylesheet" href="./public/styles/styles.css" />
+        <title>Atlas of the Forgotten Chile</title>
     </head>
     <body>
-        <div id="map"></div>
-        <script src="nycratsmap.js"></script>
+        <div class="header">
+            <div class="page-name">Atlas of the Forgotten Chile</div>
+            <div class="about">
+                <!-- <a href="">About</a> -->
+                <button class="about-button" data-modal-target="#modal">About</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="map-container">
+                <div id="map"></div>
+                
+            </div>
+            <div class="page-container">
+                <div class="grid-container"></div>
+                
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">Atlas of the Forgotten Chile</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt tenetur, fugiat minima enim excepturi ullam ratione voluptatibus saepe exercitationem, maxime, fuga veniam facilis dolor at autem ipsam dolorem soluta.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt tenetur, fugiat minima enim excepturi ullam ratione voluptatibus saepe exercitationem, maxime, fuga veniam facilis dolor at autem ipsam dolorem soluta.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt tenetur, fugiat minima enim excepturi ullam ratione voluptatibus saepe exercitationem, maxime, fuga veniam facilis dolor at autem ipsam dolorem soluta.
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <script src="./public/js/web-map.js"></script>
     </body>
 </html>
