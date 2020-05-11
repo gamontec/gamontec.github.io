@@ -95,10 +95,25 @@ function loadImage(obj){
 
     let text = document.createElement('div')
     text.className = 'text'
-    text.innerText = obj.properties.name + '\n' + obj.geometry.coordinates[1] + ', ' + obj.geometry.coordinates[0]
+    let textContent = document.createElement('p')
+    textContent.className = 'text-content'
+    let townName = document.createElement('span')
+    townName.className = 'town-name'
+    let townLocation = document.createElement('span')
+    townLocation.className = 'town-location'
+
+    townName.innerText= obj.properties.name + '\n'
+    townLocation.innerText = obj.geometry.coordinates[1] + ', ' + obj.geometry.coordinates[0]
+
+    // text.innerText = obj.properties.name + '\n' + obj.geometry.coordinates[1] + ', ' + obj.geometry.coordinates[0]
 
     image.appendChild(imageContent)
     galleryItem.appendChild(image)
+
+    textContent.appendChild(townName)
+    textContent.appendChild(townLocation)
+    text.appendChild(textContent)
+
     galleryItem.appendChild(text)
     galleryItem.id = Number(obj.properties.id)
     galleryCont.appendChild(galleryItem)

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+body{
+  background-color: #fcfbf9;
+}
+
 .header{  
   font-family: 'Open Sans', sans-serif;
   margin-top: 10px;
@@ -61,9 +65,15 @@
   width: 66%;
   position: absolute;
   overflow: auto;
+  scrollbar-width: none;
+}
+
+.container .page-container::-webkit-scrollbar{
+  display: none;
 }
 
 .grid-container{
+  margin-right: 6px;
   display:grid;
   grid-template-columns: repeat(3,1fr);
   grid-auto-rows: 300px;
@@ -89,27 +99,42 @@
   object-fit: cover;
   object-position: 50% 50%;
   cursor: pointer;
-  transition: .5s ease-in-out;
+  transition: .8s ease-in-out;
 }
 
 .grid-container .gallery-item:hover .image img{
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 .grid-container .gallery-item .text{
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
-  text-align: center;
+  text-align: left;
   width: 80%;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  bottom: 5%;
+  left: 5%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  color: #fff;
+  transform: translate(-50%,-50%); */
+  color: #fcfbf9;
   pointer-events: none;
   z-index: 4;
   transition: .3s ease-in-out;
+}
+
+.grid-container .gallery-item .text .text-content {
+  margin: 0%;
+}
+
+/* .grid-container .gallery-item .text .text-content .town-name {
+  font-weight: 500;
+} */
+
+.grid-container .gallery-item .text .text-content .town-location {
+  font-size: 18px;
+  font-style: italic;
 }
 
 .grid-container .gallery-item:hover .text{
@@ -132,8 +157,8 @@
   /* border-radius: 10px; */
   z-index: 10;
   background-color: white;
-  width: 500px;
-  max-width: 80%;
+  width: 50%;
+  max-width: 90%;
 }
 
 .modal.active {
@@ -158,13 +183,18 @@
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .modal-body {
   font-family: 'Open Sans', sans-serif;
-  padding: 10px 15px;
+  padding: 15px;
+}
+
+.modal-body a{
+  text-decoration: none;
+  color: black;
 }
 
 #overlay {
